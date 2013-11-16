@@ -1,43 +1,62 @@
-	<div class="jumbotron">
-  <h1>Mi Proyecto 1.0</h1>
-  <h2>Version Pro</h2>
-  <p>Mi super versión de Proyecto 1</p>
-  <p><a class="btn btn-primary btn-lg" role="button">Learn more</a></p>
+	<div class="jumbotron" style= "background-image: url(http://www.deliciousfood4u.com/wp-content/uploads/2012/05/food_steak_desktop_1302x1020_wallpaper-420339.jpg)">
+		<h1>Food Time!</h1>
+		<p style=" color: rgb(100, 090, 090)">Las cosas más grandes de este mundo, son definidas por sus más grandes detalles.</p>
+		<p><a class="btn btn-primary btn-lg" role="button">Registrarse</a></p>
+	</div>
+	<h2 style=" margin-left: 30px">You talkin' to me?</h2>
+  <div class="row">
+    <div class="col-md-7">
+     <%= image_tag "louis.jpg", :style=>"margin-left:30px; padding-bottom:5px;" %>
+   </div>
+   <b>
+     <div class="col-md-5">
+       <pre style= "margin-right: 3em; margin-bottom: 1em">
+         <p align="left"; text-align:"top"; style=" margin-left: 10px; margin-top: 10px; margin-bottom: 0px; font-family: Helvetica; font-size:20px; margin-right: 1em"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </pre>
+    </div>
+  </div>
+</b>
+<br>
+<a href="http://www.google.com" target="_blank"> 
+ Link a google </a>
+ <hr>
+</a>
+<div id="contenedor">
+  <div id="myCarousel" class="carousel slide">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+      <div class="active item"><img  src="http://www.diamond-foods.com/wp-content/uploads/2013/02/slider12.jpg" alt="banner1" /></div>
+      <div class="item"><img  src="http://www.cafefiorewoodlandhills.com/wp-content/uploads/2013/03/Cafe-Fiore-Food1.jpg" alt="banner2" /></div>
+      <div class="item"><img  src="http://www.cafefioreventura.com/wp-content/uploads/2013/04/Fiore-Italian-Food.jpg" /></div>
+      <div class="item"><img  src="http://vpthemes.com/preview/Restaurant/wp-content/uploads/2013/06/restaurant-11.jpg" alt="banner4" /></div>
+      <div class="item"><img  src="http://vpthemes.com/preview/Restaurant/wp-content/uploads/2013/06/restaurant-21.jpg" /></div>
+    </div>
+    <!-- Carousel nav -->
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+  </div>
 </div>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+  $('.carousel').carousel({
+    interval: 3000
+  });
+});
+</script>
+<hr>
 
-
-	<h1 style="border:1px solid #cc">Página Proyecto 1</h1>
-
-	<h2> título h2 </h2>
-	<a href="http://www.google.com"> 
-		Link a google </a>
-		<hr>
-
-		<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-		<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-		</p>
-		<br>
-		<img src="http://flickholdr.com/200/300/sea,sun">
-		<img src="http://flickholdr.com/200/300/sea">
-
-		<img src="http://bituchile.com/wp-content/uploads/2011/11/music.jpg">
-
-		<a href="http://www.google.com" target="_blank"> 
-		Link a google </a>
-		<hr>
-
-	</a>
-
-	<%= image_tag "arte.png" %>
