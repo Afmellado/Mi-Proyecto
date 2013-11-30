@@ -2,6 +2,12 @@
 <html>
 <head>
 	<title>Food Time</title>
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+
+	
+
 	<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
 	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 	<%= csrf_meta_tags %>
@@ -15,8 +21,8 @@
 <body>
 
 	<%= render :partial => 'shared/header' %>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+	<div class="notice" style="margin: 0px"><%= notice %> </div>
+	<div class="alert" style="padding: 0px; margin-bottom: 0px; border: 0px"><%= alert %></div>
 	<%= yield %>
 
 </body>
