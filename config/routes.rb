@@ -1,15 +1,18 @@
 Proyecto::Application.routes.draw do
-  resources :pins
+  resources :pins 
 
   devise_for :users
-  get "pages/index"
-  root 'pages#index'
-  get 'aboutus' => 'pages#aboutus'
+  resources :users, :only => ['show', 'index']
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
+
+  get "pages/index"
+  root 'pages#index'
+  get 'aboutus' => 'pages#aboutus'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
